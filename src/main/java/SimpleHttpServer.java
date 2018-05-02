@@ -22,7 +22,7 @@ public class SimpleHttpServer {
             httpServer.createContext("/", new GetGreetingHandler(greetingService, outputWriter));
             httpServer.createContext("/add", new AddNameHandler(greetingService, inputReader, outputWriter));
             httpServer.createContext("/update", new UpdateNameHandler(greetingService, inputReader, outputWriter));
-            httpServer.createContext("/delete", new DeleteNameHandler(greetingService, inputReader,outputWriter));
+//            httpServer.createContext("/delete", new DeleteNameHandler(greetingService, inputReader,outputWriter));
             httpServer.createContext("/names", new GetAllNamesHandler(greetingService,outputWriter));
 
         }
