@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Handler.GetGreetingHandlerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-05-04T04:09:26" hostname="C02VM0LGHTD8" time="0.099">
+  <properties/>
+  <testcase name="rootEndpointShouldSendDefaultGreeting" classname="Handler.GetGreetingHandlerTest" time="0.099"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
