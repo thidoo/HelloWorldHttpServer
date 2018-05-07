@@ -1,6 +1,8 @@
 package Service;
 
 import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
@@ -8,7 +10,7 @@ import java.util.stream.Collectors;
 
 public class GreetingService {
 
-    private static final String MY_NAME = "Thi";
+    private static final String MY_NAME = "Ngoc";
     private static List<String> names;
 
     public GreetingService() {
@@ -57,7 +59,7 @@ public class GreetingService {
     }
 
     private String getCurrentDateTime(DateTimeFormatter dateTimeformatter) {
-        LocalDateTime currentTime = LocalDateTime.now();
+        ZonedDateTime currentTime = LocalDateTime.now().atZone(ZoneId.of("UTC+10:00"));
         return currentTime.format(dateTimeformatter);
     }
 }
