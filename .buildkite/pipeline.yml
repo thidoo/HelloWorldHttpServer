@@ -1,5 +1,5 @@
 steps:
   - label: 'helloworld-httpserver'
-    command: 'echo "Hello World"'
+    command: 'echo Hello World'
     agents:
       queue: 'fma-dev-dflt'
